@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MUSIC WEBSITE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Hound</title>
+    <link rel="stylesheet" href="../css/style2.css">
+</head>
+<body>
+    <div class="navbar">
+       <h1 class="name"><i><span style="color: rgba(0, 255, 17, 0.803);">Sound</span style="color">Hound<span></span></i></h1><br>
+      
+     
+        <div class="main-nav">
+
+        <a href="../index.html"><button class="nav-1"><b>S</b></button></a>
+        <a href="../index.html"><button class="nav-2"><b>All</b></button></a>
+        <a href="../pages/music.html"><button class="nav-3"><b>Music</b></button></a>
+        <a href="../pages/podcast.html"><button class="nav-4"><b>Podcasts</b></button></a> 
+        
+        <a href="../pages/login-page.html"><button class="nav-5"><b>Login</b></button></a>
+        <a href="../pages/registration-page.html"><button class="nav-6"><b>Register</b></button></a>
+        
+
+    </div>
+   
+   <hr class="line">
+
+    <div class="main-nav-2">
+        <div>
+            <img src="../Images/home (3).png" class="images"><br>
+            <span style="color: white;font-family: sans-serif; position: relative; top: 7px;">Home</span>
+        </div>
+        <div>
+            <img src="../Images/search (3).png" class="images"><br>
+            <span style="color: white;font-family: sans-serif; position: relative; top: 7px;">Search</span>
+        </div>
+        <div>
+            <img src="../Images/music-album.png" class="images"><br>
+            <span style="color: white;font-family: sans-serif; position: relative; top: 7px;">library</span>
+        </div>
+        
+
+    </div>
+    
+</div>
+<script src="../javascript/podcast.js"></script>
+<div class ="container">
+    <div class="right-col">
+        <p><h1>Click Here To Listen</h1></p>
+        <img src="../Images/blackplay.png" id="icon">
+
+
+ </div>
+ <audio id="mysong">
+    <source src="../Images/southside.mp3" type="audio/mp3">
+ </audio> 
+ <script>
+    var mysong = document.getElementById("mysong");
+    var icon = document.getElementById("icon");
+    icon.onclick=function(){
+        if(mysong.paused){
+            mysong.play();
+            icon.src="../Images/pauseblack.png";
+        }else{
+            mysong.pause();
+            icon.src="../Images/blackplay.png";
+        
+        }
+        }
+    
+ </script>
+ 
+ 
+ 
+    
+  
+
+
+                </div>
+                <h2 class="book-title"><c>Top Picks for YOU</c></h2>
+            <div class="book-container-1">
+                <div class="book-card">
+                    <img src="../Images/1.jpeg" class="book-card-img">
+                    <h4 class="book-card-title"> Pep Talk</h4>
+                    <h5 class="book-description">Released : 2016</h5>
+                    
+                   
+                    <button class="Buy-now-btn">Play </button>
+            
+                </div>
+                <div class="book-card">
+                    <img src="../Images/2.jpeg" class="book-card-img">
+                    <h4 class="book-card-title">Long Story</h4>
+                    <h5 class="book-description">Released : 2015</h5>
+                
+                  
+                    <button class="Buy-now-btn">Play </button>
+                    </div>
+                    <div class="book-card">
+                        <img src="../Images/3.jpeg" class="book-card-img">
+                        <h4 class="book-card-title"> Nuporu</h4>
+                        <h5 class="book-description">Released : 2017</h5>
+                       
+                        
+                        <button class="Buy-now-btn">Play</button>
+                    </div>
+                    <div class="book-card">
+                        <img src="../Images/m30.jpeg" class="book-card-img">
+                        <h4 class="book-card-title">Ajab Si</h4>
+                        <h5 class="book-description">Released : 2018</h5>
+                        
+                        
+                        <button class="Buy-now-btn">Play</button>
+                    </div>
+                    <div class="book-card">
+                        <img src="..\Images\5.jpeg" class="book-card-img">
+                        <h4 class="book-card-title">What it is</h4>
+                        <h5 class="book-description">Released : 2013</h5>
+                       
+                       
+                        <button class="Buy-now-btn">Play</button>
+                    </div>
+                    <h2 class="book-title"></c>Favourites</h2>
+            <div class="book-container-1">
+                    <div class="book-card">
+                        <img src="..\Images\6.jpeg" class="book-card-img">
+                        <h3 class="book-card-title">Truth</h3>
+                        <h5 class="book-description">Released : 2012</h5>
+                        
+                    
+                        <button class="Buy-now-btn">Play</button>
+                    </div>
+                    <div class="book-card">
+                        <img src="..\Images\8.jpeg" class="book-card-img">
+                        <h3 class="book-card-title">Say It</h3>
+                        <h5 class="book-description">Released : 2022</h5>
+                        
+                       
+                        <button class="Buy-now-btn">Play</button>
+                    </div>
+                    <div class="book-card">
+                        <img src="..\Images\9.jpeg"class="book-card-img">
+                        <h3 class="book-card-title">Tales</h3>
+                        <h5 class="book-description">Released : 2023</h5>
+                        
+                       
+                        <button class="Buy-now-btn">Play</button>
+                    </div>
+                    <div class="book-card">
+                      <img src="..\Images\10.jpeg" class="book-card-img">
+                      <h3 class="book-card-title">Comfort Zone</h3>
+                      <h5 class="book-description">Released : 2015</h5>
+                     
+                    
+                      <button class="Buy-now-btn">Play</button>
+                  </div>
+                  <div class="book-card">
+                    <img src="..\Images\11.jpeg" class="book-card-img">
+                    <h3 class="book-card-title">Chats w Cass</h3>
+                    <h5 class="book-description">Released : 2016</h5>
+                    
+                    
+                    <button class="Buy-now-btn">Play</button>
+                </div>
+                <h2 class="book-title">Self Help</h2>
+            <div class="book-container-1">
+                <div class="book-card">
+                  <img src="..\Images\12.jpeg" class="book-card-img">
+                  <h3 class="book-card-title">Worthy</h3>
+                  <h5 class="book-description">Released : 2017</h5>
+                  
+                
+                  <button class="Buy-now-btn">Play</button>
+              </div>
+              <div class="book-card">
+                <img src="..\Images\couple1.jpeg" class="book-card-img">
+                <h3 class="book-card-title">Couples T</h3>
+                <h5 class="book-description">Released : 2015</h5>
+                
+                
+                <button class="Buy-now-btn">Play</button>
+            </div>
+            <div class="book-card">
+                <img src="..\Images\women1.jpeg" class="book-card-img">
+                <h3 class="book-card-title">Matters</h3>
+                <h5 class="book-description">Released : 2016</h5>
+              
+                
+                <button class="Buy-now-btn">Play</button>
+            </div>
+            
+            <div class="book-card">
+                <img src="..\Images\women2.jpeg" class="book-card-img">
+                <h3 class="book-card-title">Women's</h3>
+                <h5 class="book-description">Released : 2019</h5>
+                
+                
+                <button class="Buy-now-btn">Play</button>
+            </div>
+            <div class="book-card">
+                <img src="..\Images\women3.jpeg" class="book-card-img">
+                <h3 class="book-card-title">LIFE</h3>
+                <h5 class="book-description">Released : 2022</h5>
+             
+                
+                <button class="Buy-now-btn">Play</button>
+            </div>
+            <h2 class="book-title">Women Empowerment</h2>
+            <div class="book-container-1">
+            <div class="book-card">
+                <img src="..\Images\women4.jpeg" class="book-card-img">
+                <h3 class="book-card-title">Speak Up</h3>
+                <h5 class="book-description">Released : 2023</h5>
+            
+                
+                <button class="Buy-now-btn">Play</button>
+            </div>
+            <div class="book-card">
+                <img src="..\Images\women5.jpeg" class="book-card-img">
+                <h3 class="book-card-title">NO</h3>
+                <h5 class="book-description">Released : 2023</h5>
+                
+                
+                <button class="Buy-now-btn">Play</button>
+            </div>
+            <div class="book-card">
+                <img src="..\Images\women6.jpeg" class="book-card-img">
+                <h3 class="book-card-title">Violence</h3>
+                <h5 class="book-description">Released : 2017</h5>
+             
+                
+                <button class="Buy-now-btn">Play</button>
+            </div>
+            <div class="book-card">
+                <img src="..\Images\women7.jpeg" class="book-card-img">
+                <h3 class="book-card-title">Girl Power</h3>
+                <h5 class="book-description">Released : 2015</h5>
+               
+                
+                <button class="Buy-now-btn">Play</button>
+            </div>
+            <div class="book-card">
+                <img src="..\Images\women8.jpeg" class="book-card-img">
+                <h3 class="book-card-title">ZNMD</h3>
+                <h5 class="book-description">Released : 2023</h5>
+             
+                
+                <button class="Buy-now-btn">Play</button>
+            </div>
+            
+            
+
+
+
+
+
+                  

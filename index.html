@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: black;
+        }
+
+        .name{
+            padding: 20px;
+            color: white;
+            font-family:  Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            
+        }
+        .navbar{
+            background-color: rgb(0, 0, 0);
+            height: 220px;
+            width: 100%;
+            margin-top: -22px;
+           
+
+
+        }
+        .main-nav{
+            display: flex;
+            flex-direction: row;
+            margin-top: -260px;
+            padding: 150px;
+            text-align: center;
+            margin-left: 150px;
+            margin-right: 200px;
+           justify-content: space-between;
+        }
+
+        .nav-1{
+            background-color: red;
+            border-radius: 100%;
+            font-size: 20px;
+            height: 40px;
+            width: 40px;
+            text-align: center;
+            color: white;
+
+        }
+        
+        .nav-1:hover{
+            background-color: rgb(255, 70, 70);
+            border-radius: 90%;
+            font-size: 20px;
+            height: 40px;
+            width: 40px;
+            text-align: center;
+            box-shadow: 0 0 2px 2px white; 
+            
+            
+        }
+        
+        .nav-2{
+            color: black;
+            background-color:  red;
+            width: 100px;
+            text-align: center;
+            height: 40px;
+            border-radius: 50px;
+            font-size: 20px;
+        }
+
+        .nav-2:hover{
+            color: white;
+            background-color: rgb(248, 68, 2);
+            width: 100px;
+            text-align: center;
+            height: 40px;
+            border-radius: 40px;
+            font-size: 20px;
+            box-shadow: 0 0 2px 2px white; 
+
+        }
+        .nav-3{
+            color: black;
+            background-color:  red;
+            height: 40px;
+            width: 100px;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .nav-3:hover{
+            color: white;
+            background-color: rgb(248, 68, 2);
+            height: 40px;
+            width: 100px;
+            border-radius: 40px;
+            text-align: center;
+            font-size: 20px;
+            box-shadow: 0 0 2px 2px white; 
+
+           
+        }
+
+        .nav-4{
+            color: black;
+            background-color:  red;
+            height: 40px;
+            width: 130px;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .nav-4:hover{
+            color: white;
+            background-color: rgb(248, 68, 2);
+            height: 40px;
+            width: 130px;
+            border-radius: 40px;
+            text-align: center;
+            font-size: 20px;
+            box-shadow:0 0 2px 2px white; 
+
+            
+        }
+
+        .nav-5{
+            color: black;
+            background-color:  red;
+            height: 40px;
+            width: 130px;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .nav-5:hover{
+            color: white;
+            background-color: rgb(248, 68, 2);
+            height: 40px;
+            width: 130px;
+            border-radius: 40px;
+            text-align: center;
+            font-size: 20px;
+            box-shadow:  0 0 2px 2px white;
+        }
+
+
+        .nav-6{
+            color: black;
+            background-color:  red;
+            height: 40px;
+            width: 130px;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .nav-6:hover{
+            color: white;
+            background-color: rgb(248, 68, 2);
+            height: 40px;
+            width: 130px;
+            border-radius: 40px;
+            text-align: center;
+            font-size: 20px;
+            box-shadow:  0 0 2px 2px white;
+        }
+
+        .main-nav-2{
+            display: flex;
+            flex-direction: row;
+            margin-top: -200px;
+            justify-content: space-between;
+            padding: 80px;
+            margin-left: 100px;
+            margin-right: 100px;
+            text-align: center;
+            
+         }
+
+        .images{
+            height: 30px;
+        }
+
+        .images:hover{
+            height: 35px;
+            
+        }
+
+        .line{
+            position: relative;
+            bottom: 130px;
+        }
+
+        .start-img{
+           
+            
+            height: 500px;
+            width: 100%;
+           }
+
+           .h1{
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 40px;
+            position: relative;
+          margin-left: 65px;
+          margin-bottom: 50px;
+
+           }
+       
+           .rp{
+            height: 200px;
+            width: 200px;
+           }
+
+           .rp-img{
+            display: flex;
+            flex-direction: row;
+            margin-left: 60px;
+            margin-right: 60px;
+            justify-content: space-between;
+           }
+
+           * {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+
+.slideshow-container {
+  max-width: 90%;
+  position:relative;
+  margin: auto;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.footer-card {
+    
+    
+    flex-direction: row;
+    background-color:rgb(244, 95, 95) ;
+                width: 300px;
+                height: 200px;
+                padding: 10px 10px;
+                margin-left: 50px;
+                margin-right: 10px;
+                margin-bottom: 50px;
+                margin-top: 50px;
+                border-radius: 20px;
+                font-family: sans-serif;
+                font-size: 10px;
+                box-shadow: 0  0 20px black;
+                display:inline-block;
+                align-items: center;
+                
+}
+
+            .footer-card:hover{
+                background-color:red;
+                        box-shadow: 0 0 2px 2px #fff;
+                        padding: 7px 25px;
+                       transition: 0.3s;
+            }
+
+.footer-card-description {
+    text-align: center;
+               color: black;
+                 font-size: 25px;
+                 font-style: bold;
+     
+        
+}
+.footer-card-description2 {
+    text-align: center;
+               color: black;
+                 font-size: 20px;
+               
+     
+        
+}
+
+.movie-name{
+    color: white;
+     font-weight: bold;
+      text-align: center;
+      font-size: 25px;
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.singer-name{
+    color: rgb(172, 170, 170);
+     position: relative;
+     text-align: center; 
+     bottom: 10px;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media screen and (max-width: 600px)
+{
+
+    .navbar{
+            background-color: rgb(0, 0, 0);
+            height: 160px;
+            width: 100%;
+            margin-top: -22px;
+            }
+
+            .name{
+            padding: 10px;
+            color: white;
+            font-family:  Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            
+        }
+
+        .main-nav{
+            display: flex;
+            
+            flex-direction: row;
+            margin-top: -180px;
+            padding: 150px;
+            text-align: center;
+            margin-left: -70px;
+            margin-right: 200px;
+           justify-content: space-between;
+           
+        }
+
+        .nav-1{
+            background-color: red;
+            border-radius: 100%;
+            font-size: 15px;
+            height: 30px;
+            width: 30px;
+            text-align: center;
+            color: white;
+            margin-bottom: 3px;
+            margin-right: 10px;
+            
+
+        }
+
+        .nav-1:hover{
+            background-color: rgb(255, 70, 70);
+            border-radius: 90%;
+            font-size: 20px;
+            height: 350px;
+            width: 35px;
+            text-align: center;
+            box-shadow: 0 0 2px 2px white; 
+              }
+        
+              .nav-2{
+            color: black;
+            background-color:  red;
+            width: 60px;
+            text-align: center;
+            height: 25px;
+            border-radius: 50px;
+            font-size: 15px;
+            margin-bottom: 3px;
+            margin-right: 10px;
+        }
+
+        .nav-3{
+            color: black;
+            background-color:  red;
+            height: 25px;
+            width: 80px;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 15px;
+            margin-bottom: 3px;
+            margin-right: 10px;
+        }
+
+        .nav-4{
+            color: black;
+            background-color:  red;
+            height: 25px;
+            width: 100px;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 15px;
+            margin-bottom: 3px;
+            margin-right: 10px;
+        }
+
+        .nav-5{
+            color: black;
+            background-color:  red;
+            height: 25px;
+            width: 90px;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 15px;
+            margin-bottom: 3px;
+            margin-right: 10px;
+        }
+
+        .nav-6{
+            color: black;
+            background-color:  red;
+            height: 25px;
+            width: 100px;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 15px;
+            margin-bottom: 3px;
+            margin-right: 10px;
+        }
+
+        .line{
+            position: relative;
+            bottom: 150px;
+            
+        }
+        .main-nav-2{
+            display: flex;
+            flex-direction: row;
+            margin-top: -230px;
+            justify-content: space-between;
+            padding: 80px;
+            margin-left: 100px;
+            margin-right: 100px;
+            text-align: center;
+            
+         }
+
+         .images{
+            height: 18px;
+        }
+
+        .slideshow-container {
+  max-width: 80%;
+  position:relative;
+  margin: auto;
+}
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+
+
+
+.dot {
+  height: 5px;
+  width: 5px;
+  margin: 0 1px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.h1{
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            position: relative;
+          margin-left: 30px;
+          margin-bottom: 30px;
+
+           }
+       
+           .rp-img{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            margin-left: 150px;
+            margin-right: 100px;
+            justify-content: space-between;
+           }
+
+           .rp{
+            height: 100px;
+            width: 100px;
+           }
+
+           .movie-name{
+    color: white;
+     font-weight: bold;
+      text-align: center;
+      font-size: 15px;
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       position: relative;
+       bottom: 80px;
+       left: 100px;
+
+}
+
+.singer-name{
+    color: rgb(172, 170, 170);
+     position: relative;
+     text-align: center; 
+     bottom: 10px;
+     font-size: 15px;
+     position: relative;
+       bottom: 80px;
+       left: 100px;
+}
+
+.footer-card {
+    
+    flex-direction: column;
+    background-color:rgb(244, 95, 95) ;
+                width: 200px;
+                height: 140px;
+                padding: 5px 5px;
+                margin-left: 50px;
+                margin-right: auto;
+                margin-bottom: auto;
+                margin-top: 40px;
+                border-radius: 20px;
+                font-family: sans-serif;
+                font-size: 8px;
+                box-shadow: 0  0 20px black;
+                display:inline-block;
+                align-items: center;
+                
+}
+
+.footer-card-description {
+    text-align: center;
+               color: black;
+                 font-size: 20px;
+                 font-style: bold;
+     
+        
+}
+.footer-card-description2 {
+    text-align: center;
+               color: black;
+                 font-size: 15px;
+               
+     
+        
+}
+}
+           
+    </style>
+</head>
+<body>
+    <div class="navbar">
+       <h1 class="name"><i><span style="color: red;">Sound</span style="color">Hound<span></span></i></h1><br>
+      
+     
+        <div class="main-nav">
+
+        <a href="./index.html"><button class="nav-1"><b>S</b></button></a>
+        <a href="./index.html"><button class="nav-2"><b>All</b></button></a>
+        <a href="./pages/music.html"><button class="nav-3"><b>Music</b></button></a>
+        <a href="./pages/podcast.html"><button class="nav-4"><b>Podcasts</b></button></a> 
+        
+        <a href="./pages/login-page.html"><button class="nav-5"><b>Login</b></button></a>
+        <a href="./pages/registration-page.html"><button class="nav-6"><b>Register</b></button></a>
+        
+
+    </div>
+   
+   <hr class="line">
+
+    <div class="main-nav-2">
+        <div>
+            <img src="./Images/home (3).png" class="images"><br>
+            <span style="color: white;font-family: sans-serif; position: relative; top: 4px;">Home</span>
+        </div>
+        <div>
+            <img src="./Images/search (3).png" class="images"><br>
+            <span style="color: white;font-family: sans-serif; position: relative; top: 4px;">Search</span>
+        </div>
+        <div>
+            <img src="./Images/music-album.png" class="images"><br>
+            <span style="color: white;font-family: sans-serif; position: relative; top: 4px;">library</span>
+        </div>
+        
+
+    </div>
+    
+</div>
+    
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="./Images/animal.jpg" style="width:100%">
+      <div class="text"></div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="./Images/chaleya-main.jpg" style="width:100%">
+      <div class="text"></div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="./Images/Pyar-hota-kayi-baar-hai-main.jpg" style="width:100%">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="./Images/Animal-main.jpg" style="width:100%">
+        <div class="text"></div>
+      </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+
+    <div>
+        <p class="h1">Recently Played</p>
+        <div class="rp-img">
+            <div>
+                <img src="./Images/animal.jpg" class="rp">
+                <p class="movie-name">Animal</p>
+                <p class="singer-name">Album . Arijit</p>
+                
+            </div>
+            <div>
+                <img src="./Images/rp-3.jpeg" class="rp">
+                <p class="movie-name">Chichhore</p>
+                <p class="singer-name">Album . Pritam </p>
+            </div>
+            <div>
+                <img src="./Images/rp-1.jpeg" class="rp">
+                <p class="movie-name">Tu Jhooti mai makkar</p>
+                <p class="singer-name">Album . Maine pi rakhi hai</p>
+            </div>
+            <div>
+                <img src="./Images/rp-2.jpeg" class="rp">
+                <p class="movie-name">Hasee To Fasee</p>
+                <p class="singer-name">Album . Drama Queen </p>
+            </div>
+
+            <div>
+                <img src="./Images/rp-5.jpg" class="rp">
+                <p class="movie-name">Janiye</p>
+                <p class="singer-name">Album . Chor Nikal Ke Bhaga</p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <p class="h1">Popular Albums</p>
+        <div class="rp-img">
+            <div>
+                <img src="./Images/animal.jpg" class="rp">
+                <p class="movie-name">Animal</p>
+                <p class="singer-name">Album . Arijit</p>
+                
+            </div>
+            <div>
+                <img src="./Images/Tu hai kahan.jpeg" class="rp">
+                <p class="movie-name">Tu hai kahan</p>
+                <p class="singer-name">Album . Pritam </p>
+            </div>
+            <div>
+                <img src="./Images/Kabir Singh.jpg" class="rp">
+                <p class="movie-name">Kabir Singh</p>
+                <p class="singer-name">Album . Maine pi rakhi hai</p>
+            </div>
+            <div>
+                <img src="./Images/URI.jpg" class="rp">
+                <p class="movie-name">URI</p>
+                <p class="singer-name">Album . Drama Queen</p>
+            </div>
+
+            <div>
+                <img src="./Images/Bhramhastra.jpg" class="rp">
+                <p class="movie-name">Brahmastra</p>
+                <p class="singer-name">Album . Chor Nikal Ke Bhaga</p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <p class="h1">Your Top Mixes</p>
+        <div class="rp-img">
+            <div>
+                <img src="./Images/Patola.jpeg" class="rp">
+                <p class="movie-name">Patola</p>
+                <p class="singer-name">Album . Arijit</p>
+                
+            </div>
+            <div>
+                <img src="./Images/m10.jpeg" class="rp">
+                <p class="movie-name">Tere Bina</p>
+                <p class="singer-name">Album . Pritam </p>
+            </div>
+            <div>
+                <img src="./Images/One love.jpg" class="rp">
+                <p class="movie-name">One Love</p>
+                <p class="singer-name">Album . Maine pi rakhi hai</p>
+            </div>
+            <div>
+                <img src="./Images/Sun sathiya.jpg" class="rp">
+                <p class="movie-name">Sun Sathiyaa</p>
+                <p class="singer-name">Album . Drama Queen</p>
+            </div>
+
+            <div>
+                <img src="./Images/Bharat.jpg" class="rp">
+                <p class="movie-name">Bharat</p>
+                <p class="singer-name">Album . Chor Nikal Ke Bhaga</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div>
+        <p class="h1">Artist</p>
+        <div class="rp-img">
+            <div>
+                <img src="./Images/Arijit-Singh.jpg" class="rp">
+                <p class="movie-name">Arijit Singh</p>
+                <p style="color: rgb(172, 170, 170);text-align: center; position: relative; bottom: 10px;"></p>
+                
+            </div>
+            <div>
+                <img src="./Images/AP Dhillon.jpeg" class="rp">
+                <p class="movie-name">AP Dhillon</p>
+                <p style="color: rgb(172, 170, 170);text-align: center; position: relative; bottom: 10px;"> </p>
+            </div>
+            <div>
+                <img src="./Images/Shubh.jpg" class="rp">
+                <p class="movie-name">Shubh</p>
+                <p style="color: rgb(172, 170, 170);text-align: center; position: relative; bottom: 10px;"></p>
+            </div>
+            <div>
+                <img src="./Images/Asses kaur.jpg" class="rp">
+                <p class="movie-name">Asees Kaur</p>
+                <p style="color: rgb(172, 170, 170);text-align: center; position: relative; bottom: 10px;"></p>
+            </div>
+
+            <div>
+                <img src="./Images/Neha kakkar.jpg" class="rp">
+                <p class="movie-name">Neha Kakkar</p>
+                <p style="color: rgb(172, 170, 170);text-align: center; position: relative; bottom: 10px;"></p>
+            </div>
+        </div>
+        </div>
+
+        
+        <div class="footer-card">
+            <h3 class="footer-card-description">Music</h3>
+            <h4 class="footer-card-description2">Music is for souls like you! You matter</h4>
+        
+
+    </div>
+
+    <div class="footer-card">
+        <h3 class="footer-card-description">Podcasts</h3>
+        <h4 class="footer-card-description2">Learn something new everyday</h4>
+        
+
+    </div>
+
+    <div class="footer-card">
+        <h3 class="footer-card-description">Live Events</h3>
+        <h4 class="footer-card-description2">What is better than live? Nothing</h4>
+        
+
+    </div>
+
+    <div class="footer-card">
+        <h3 class="footer-card-description">Made For You</h3>
+        <h4 class="footer-card-description2">Specially for just you from us at SoundHound</h4>
+        
+
+    </div>
+
+    <div class="footer-card">
+        <h3 class="footer-card-description">New Releases</h3>
+        <h4 class="footer-card-description2">Jump upon the newly released ones</h4>
+        
+        
+
+    </div>
+
+    <div class="footer-card">
+    
+        <h3 class="footer-card-description">2023 in Music</h3>
+        <h4 class="footer-card-description2">Summarize your whole 2023 through music</h4>
+        
+
+    </div>
+
+    <div class="footer-card">
+        <h3 class="footer-card-description">2023 in Podcasts</h3>
+        <h4 class="footer-card-description2">Summarize your whole 2023 into podcasts</h4>
+        
+
+    </div>
+
+    <div class="footer-card">
+        <h3 class="footer-card-description">Happy Holidays</h3>
+        <h4 class="footer-card-description2">Top mixes for your pefect holiday plan</h4>
+        
+
+    </div>
+
+
+    <script>
+        let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); 
+}
+    </script>
+   
+</body>
+</html>
